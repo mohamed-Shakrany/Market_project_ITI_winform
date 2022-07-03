@@ -111,8 +111,9 @@ namespace SalesManagmentSystem2
         //btnSales
         private void simpleButton4_Click(object sender, EventArgs e)
         {
-                //pnlContent.Controls.Clear();
-                //pnlContent.Controls.Add(frmSales.pnlSales);
+            pnlContent.Controls.Clear();
+            var show = new FrmSales();
+            pnlContent.Controls.Add(show.Purchases_details);
         }
 
         //btnSalesDetails
@@ -132,9 +133,7 @@ namespace SalesManagmentSystem2
         //btnPurchaseDetails
         private void simpleButton2_Click_1(object sender, EventArgs e)
         {
-            pnlContent.Controls.Clear();
-            var show = new FrmSales();
-            pnlContent.Controls.Add(show.Purchases_details);
+           
         }
 
         //btnSupplier
