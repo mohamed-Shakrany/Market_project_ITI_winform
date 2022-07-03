@@ -14,6 +14,7 @@ namespace SalesManagmentSystem2.DAL.Models
         [Key]
         public int ProductID { get; set; }
         [Display(Name ="اسم المنتج")]
+        [Required]
         public string ProductName { get; set; }
         [Display(Name = "سعر الوحدة")]
         [Column(TypeName ="money")]
@@ -24,10 +25,11 @@ namespace SalesManagmentSystem2.DAL.Models
         #endregion
         #region relation
         [ForeignKey("Category")]
+        [Display(Name = "الصنف")]
         public int? categoryId { get; set; }
-        public Category Category { get; set; }
-        public ICollection<OrderDetails> OrderDetails { get; set; }
-        public ICollection<BuyProcessProduct> buyProcessProducts { get; set; }
+        public virtual Category Category { get; set; }
+        public virtual ICollection<OrderDetails> OrderDetails { get; set; }
+        public virtual ICollection<BuyProcessProduct> buyProcessProducts { get; set; }
         #endregion
     }
 }

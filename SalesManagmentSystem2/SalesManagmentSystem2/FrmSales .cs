@@ -63,60 +63,60 @@ namespace SalesManagmentSystem2
 
         private void Purchasing_Price_TextChanged(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(Purchasing_Price.Text, "[^0-9]")
-        )
-            {
-                MessageBox.Show("Please enter only numbers.");
-                Purchasing_Price.Text = Purchasing_Price.Text.Remove(Purchasing_Price.Text.Length - 1);
-            }
-            else
-                Check_Price = true;
-            if (check_quantity && Check_Price && !String.IsNullOrEmpty(Quantity_Purchased.Text) && !String.IsNullOrEmpty(Purchasing_Price.Text))
-            {
-                //  var m = int.Parse(quantity_check.Text) * int.Parse(price_check.Text);
-                Total_Item_Purchased.Text = (int.Parse(Quantity_Purchased.Text) * int.Parse(Purchasing_Price.Text)).ToString();
+        //    if (System.Text.RegularExpressions.Regex.IsMatch(Purchasing_Price.Text, "[^0-9]")
+        //)
+        //    {
+        //        MessageBox.Show("Please enter only numbers.");
+        //        Purchasing_Price.Text = Purchasing_Price.Text.Remove(Purchasing_Price.Text.Length - 1);
+        //    }
+        //    else
+        //        Check_Price = true;
+        //    if (check_quantity && Check_Price && !String.IsNullOrEmpty(Quantity_Purchased.Text) && !String.IsNullOrEmpty(Purchasing_Price.Text))
+        //    {
+        //        //  var m = int.Parse(quantity_check.Text) * int.Parse(price_check.Text);
+        //        Total_Item_Purchased.Text = (int.Parse(Quantity_Purchased.Text) * int.Parse(Purchasing_Price.Text)).ToString();
 
-            }
-            else
-            {
-                Total_Item_Purchased.Text = "-";
-            }
+        //    }
+        //    else
+        //    {
+        //        Total_Item_Purchased.Text = "-";
+        //    }
         }
 
         private void Quantity_Purchased_Leave(object sender, EventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(Quantity_Purchased.Text, "[^0-9]")
-              )
-            {
-                MessageBox.Show("Please enter only numbers.");
-                Quantity_Purchased.Text = Quantity_Purchased.Text.Remove(Quantity_Purchased.Text.Length - 1);
-            }
-            else
-            {
-                check_quantity = true;
+            //if (System.Text.RegularExpressions.Regex.IsMatch(Quantity_Purchased.Text, "[^0-9]")
+            //  )
+            //{
+            //    MessageBox.Show("Please enter only numbers.");
+            //    Quantity_Purchased.Text = Quantity_Purchased.Text.Remove(Quantity_Purchased.Text.Length - 1);
+            //}
+            //else
+            //{
+            //    check_quantity = true;
 
-            } if (check_quantity && Check_Price && !String.IsNullOrEmpty(Quantity_Purchased.Text) && !String.IsNullOrEmpty(Purchasing_Price.Text))
-            {
-                //  var m = int.Parse(quantity_check.Text) * int.Parse(price_check.Text);
-                Total_Item_Purchased.Text = (int.Parse(Quantity_Purchased.Text) * int.Parse(Purchasing_Price.Text)).ToString();
-
-            }
-            else
-            {
-                Total_Item_Purchased.Text ="-";
-            }
-
-
-        }
-        public void ch(Label l)
-        {
-            Total_Item_Purchased = l;
-            //while (check_quantity && Check_Price && !String.IsNullOrEmpty(Quantity_Purchased.Text) && !String.IsNullOrEmpty(Purchasing_Price.Text))
+            //} if (check_quantity && Check_Price && !String.IsNullOrEmpty(Quantity_Purchased.Text) && !String.IsNullOrEmpty(Purchasing_Price.Text))
             //{
             //    //  var m = int.Parse(quantity_check.Text) * int.Parse(price_check.Text);
             //    Total_Item_Purchased.Text = (int.Parse(Quantity_Purchased.Text) * int.Parse(Purchasing_Price.Text)).ToString();
 
             //}
+            //else
+            //{
+            //    Total_Item_Purchased.Text ="-";
+            //}
+
+
+        }
+        public void ch(Label l)
+        {
+            //Total_Item_Purchased = l;
+            ////while (check_quantity && Check_Price && !String.IsNullOrEmpty(Quantity_Purchased.Text) && !String.IsNullOrEmpty(Purchasing_Price.Text))
+            ////{
+            ////    //  var m = int.Parse(quantity_check.Text) * int.Parse(price_check.Text);
+            ////    Total_Item_Purchased.Text = (int.Parse(Quantity_Purchased.Text) * int.Parse(Purchasing_Price.Text)).ToString();
+
+            ////}
         }
 
     }

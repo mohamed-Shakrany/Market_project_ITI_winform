@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SalesManagmentSystem2.Player
+namespace SalesManagmentSystem2.PL
 {
     public  partial class MessageDialog : Form
     {

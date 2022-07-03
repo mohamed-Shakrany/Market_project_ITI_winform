@@ -17,9 +17,9 @@ namespace SalesManagmentSystem2.DAL.DbInventory
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<BuyProcessProduct>()
-                .HasKey(BPP => new { BPP.BuyID, BPP.prodID, BPP.DataProcess });
+                .HasKey(BPP => new { BPP.Id_bp, BPP.Id_p});
             modelBuilder.Entity<OrderDetails>()
-                .HasKey(OD => new { OD.OrdID,OD.ProdID});
+                .HasKey(OD => new { OD.Id_o,OD.Id_pp});
             // modelBuilder.Types().Configure(t => t.MapToStoredProcedures());
             // modelBuilder.Entity<BuyProcess>()
             // .HasOptional<Supplier>(s => s.Supplier)
@@ -55,17 +55,17 @@ namespace SalesManagmentSystem2.DAL.DbInventory
           .HasForeignKey(c => c.userId)
           .WillCascadeOnDelete(true);
 
-            modelBuilder.Entity<BuyProcessProduct>()
-           .HasOptional(c => c.Product)
-           .WithMany(a => a.buyProcessProducts)
-           .HasForeignKey(c => c.ProductId)
-           .WillCascadeOnDelete(true);
+          //  modelBuilder.Entity<BuyProcessProduct>()
+          // .HasOptional(c => c.Product)
+          // .WithMany(a => a.buyProcessProducts)
+          // .HasForeignKey(c => c.Id_bp)
+          // .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<BuyProcessProduct>()
-          .HasOptional(c => c.BuyProcess)
-          .WithMany(a => a.BuyProcessProducts)
-          .HasForeignKey(c => c.BuyProcessId)
-          .WillCascadeOnDelete(true);
+          //  modelBuilder.Entity<BuyProcessProduct>()
+          //.HasOptional(c => c.BuyProcess)
+          //.WithMany(a => a.BuyProcessProducts)
+          //.HasForeignKey(c => c.Id_bp)
+          //.WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Product>()
          .HasOptional(c => c.Category)
@@ -74,17 +74,17 @@ namespace SalesManagmentSystem2.DAL.DbInventory
          .WillCascadeOnDelete(true);
 
 
-            modelBuilder.Entity<OrderDetails>()
-           .HasOptional(c => c.Product)
-           .WithMany(a => a.OrderDetails)
-           .HasForeignKey(c => c.productId)
-           .WillCascadeOnDelete(true);
+          //  modelBuilder.Entity<OrderDetails>()
+          // .HasOptional(c => c.Product)
+          // .WithMany(a => a.OrderDetails)
+          // .HasForeignKey(c => c.Id_pp)
+          // .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<OrderDetails>()
-          .HasOptional(c => c.Order)
-          .WithMany(a => a.OrderDetails)
-          .HasForeignKey(c => c.orderId)
-          .WillCascadeOnDelete(true);
+          //  modelBuilder.Entity<OrderDetails>()
+          //.HasOptional(c => c.Order)
+          //.WithMany(a => a.OrderDetails)
+          //.HasForeignKey(c => c.Id_o)
+          //.WillCascadeOnDelete(false);
 
 
 

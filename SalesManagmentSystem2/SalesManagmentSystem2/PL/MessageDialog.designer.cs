@@ -1,4 +1,4 @@
-﻿namespace SalesManagmentSystem2.Player
+﻿namespace SalesManagmentSystem2.PL
 {
     partial class MessageDialog
     {

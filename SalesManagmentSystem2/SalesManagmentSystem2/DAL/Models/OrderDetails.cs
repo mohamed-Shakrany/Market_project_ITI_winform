@@ -13,10 +13,16 @@ namespace SalesManagmentSystem2.DAL.Models
         #region properies
         [Key]
         [Column(Order = 0)]
-        public int OrdID { get; set; }
+        [Required]
+        [ForeignKey("Order")]
+        [Display(Name = "رقم الطلب")]
+        public int Id_o { get; set; }
         [Key]
         [Column(Order = 1)]
-        public int ProdID { get; set; }
+        [Display(Name = "اسم المنتج")]
+        [Required]
+        [ForeignKey("Product")]
+        public int  Id_pp { get; set; }
         [Display(Name ="كمية المنتج")]
         public int QuantityProduct { get; set; }
         [Column(TypeName = "money")]
@@ -25,16 +31,10 @@ namespace SalesManagmentSystem2.DAL.Models
         [Column(TypeName = "money")]
         [Display(Name = "اجمالى السعر")]
         public decimal TotalPrice { get; set; }
-
-
         #endregion
         #region realtion
-        [ForeignKey("Order")]
-        public int? orderId { get; set; }
-        public Order Order { get; set; }
-        [ForeignKey("Product")]
-        public int? productId { get; set; }
-        public Product Product { get; set; }
+        public virtual Order Order { get; set; }
+        public virtual Product Product { get; set; }
         #endregion
     }
 }

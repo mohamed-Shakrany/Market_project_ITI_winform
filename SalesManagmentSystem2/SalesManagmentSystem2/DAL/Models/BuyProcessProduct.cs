@@ -12,34 +12,31 @@ namespace SalesManagmentSystem2.DAL.Models
     {
         #region properties
         [Key]
+
         [Column(Order = 0)]
-        public int prodID { get; set; }
+        [ForeignKey("Product")]
+        [Display(Name ="اسم المنتج")]
+        [Required]
+        public int Id_p { get; set; }
         [Key]
         [Column(Order = 1)]
-        public int BuyID { get; set; }
-        [Column(TypeName = "date",Order = 2)]
-        [Display(Name ="تاريخ عمليةالاشراء")] 
-        public DateTime DataProcess { get; set; }
-        [Display(Name = "اجمالى الكمية")]
-        [Column(TypeName ="decimal")]
-        public decimal Total_quantity { get; set; }
+        [Display(Name = "رقم الفاتورة")]
+        [ForeignKey("BuyProcess")]
+        [Required]
+
+        public int Id_bp { get; set; }
+        [Display(Name = "اجمالى كمية المنتج")]
+        public int Total_quantity { get; set; }
         [Column(TypeName ="date")]
         [Display(Name = "تاريخ انتاج المنتج")]
         public DateTime ProductDate { get; set; }
         [Column(TypeName = "date")]
         [Display(Name = "تاريخ انتهاء المنتج")]
         public DateTime ExpireDate { get; set; }
-
         #endregion
-
         #region relation 
-        [ForeignKey("BuyProcess")]
-        public int? BuyProcessId { get; set; }
-        public BuyProcess BuyProcess { get; set; }
-
-        [ForeignKey("Product")]
-        public int? ProductId { get; set; }
-        public Product Product { get; set; }
+        public virtual BuyProcess BuyProcess { get; set; }
+        public virtual Product Product { get; set; }
 
         #endregion
     }

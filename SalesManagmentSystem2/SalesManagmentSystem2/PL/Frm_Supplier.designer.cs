@@ -1,4 +1,4 @@
-﻿namespace SalesManagmentSystem2.Player
+﻿namespace SalesManagmentSystem2.PL
 {
     partial class Frm_Supplier
     {
@@ -28,17 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Supplier));
             this.Page_supplier = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.suppliersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.colSuppName = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSuppAddress = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSuppPhone = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colSuppMail = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colAddress = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colPhone = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMail = new DevExpress.XtraGrid.Columns.GridColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.refresh_supp = new DevExpress.XtraEditors.SimpleButton();
@@ -59,7 +57,6 @@
             this.Page_supplier.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -88,7 +85,6 @@
             // 
             // gridControl1
             // 
-            this.gridControl1.DataSource = this.suppliersBindingSource;
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
@@ -100,17 +96,13 @@
             this.gridView1});
             this.gridControl1.Click += new System.EventHandler(this.gridControl1_Click);
             // 
-            // suppliersBindingSource
-            // 
-            this.suppliersBindingSource.DataSource = typeof(SalesManagmentSystem2.DAL.Models.Supplier);
-            // 
             // gridView1
             // 
             this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.colSuppName,
-            this.colSuppAddress,
-            this.colSuppPhone,
-            this.colSuppMail});
+            this.colName,
+            this.colAddress,
+            this.colPhone,
+            this.colMail});
             this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
@@ -120,41 +112,41 @@
             this.gridView1.OptionsSelection.CheckBoxSelectorField = "ID";
             this.gridView1.OptionsSelection.EnableAppearanceFocusedCell = false;
             // 
-            // colSuppName
+            // colName
             // 
-            this.colSuppName.FieldName = "SuppName";
-            this.colSuppName.MinWidth = 22;
-            this.colSuppName.Name = "colSuppName";
-            this.colSuppName.Visible = true;
-            this.colSuppName.VisibleIndex = 0;
-            this.colSuppName.Width = 83;
+            this.colName.FieldName = "Name";
+            this.colName.MinWidth = 22;
+            this.colName.Name = "colName";
+            this.colName.Visible = true;
+            this.colName.VisibleIndex = 0;
+            this.colName.Width = 83;
             // 
-            // colSuppAddress
+            // colAddress
             // 
-            this.colSuppAddress.FieldName = "SuppAddress";
-            this.colSuppAddress.MinWidth = 22;
-            this.colSuppAddress.Name = "colSuppAddress";
-            this.colSuppAddress.Visible = true;
-            this.colSuppAddress.VisibleIndex = 1;
-            this.colSuppAddress.Width = 83;
+            this.colAddress.FieldName = "Address";
+            this.colAddress.MinWidth = 22;
+            this.colAddress.Name = "colAddress";
+            this.colAddress.Visible = true;
+            this.colAddress.VisibleIndex = 1;
+            this.colAddress.Width = 83;
             // 
-            // colSuppPhone
+            // colPhone
             // 
-            this.colSuppPhone.FieldName = "SuppPhone";
-            this.colSuppPhone.MinWidth = 22;
-            this.colSuppPhone.Name = "colSuppPhone";
-            this.colSuppPhone.Visible = true;
-            this.colSuppPhone.VisibleIndex = 2;
-            this.colSuppPhone.Width = 83;
+            this.colPhone.FieldName = "Phone";
+            this.colPhone.MinWidth = 22;
+            this.colPhone.Name = "colPhone";
+            this.colPhone.Visible = true;
+            this.colPhone.VisibleIndex = 2;
+            this.colPhone.Width = 83;
             // 
-            // colSuppMail
+            // colMail
             // 
-            this.colSuppMail.FieldName = "SuppMail";
-            this.colSuppMail.MinWidth = 22;
-            this.colSuppMail.Name = "colSuppMail";
-            this.colSuppMail.Visible = true;
-            this.colSuppMail.VisibleIndex = 3;
-            this.colSuppMail.Width = 83;
+            this.colMail.FieldName = "Mail";
+            this.colMail.MinWidth = 22;
+            this.colMail.Name = "colMail";
+            this.colMail.Visible = true;
+            this.colMail.VisibleIndex = 3;
+            this.colMail.Width = 83;
             // 
             // panel1
             // 
@@ -258,7 +250,7 @@
             this.labelControl4.Appearance.Options.UseFont = true;
             this.labelControl4.Location = new System.Drawing.Point(241, 251);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(56, 21);
+            this.labelControl4.Size = new System.Drawing.Size(62, 23);
             this.labelControl4.TabIndex = 7;
             this.labelControl4.Text = "العنوان";
             // 
@@ -268,7 +260,7 @@
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Location = new System.Drawing.Point(165, 172);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(131, 21);
+            this.labelControl3.Size = new System.Drawing.Size(142, 23);
             this.labelControl3.TabIndex = 6;
             this.labelControl3.Text = "البريد الالكترونى";
             // 
@@ -278,7 +270,7 @@
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Location = new System.Drawing.Point(198, 93);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(100, 21);
+            this.labelControl2.Size = new System.Drawing.Size(109, 23);
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "رقم التليفون";
             // 
@@ -288,7 +280,7 @@
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Location = new System.Drawing.Point(200, 25);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(95, 21);
+            this.labelControl1.Size = new System.Drawing.Size(106, 23);
             this.labelControl1.TabIndex = 4;
             this.labelControl1.Text = "اسم العميل";
             // 
@@ -298,7 +290,7 @@
             this.email_client.Location = new System.Drawing.Point(19, 203);
             this.email_client.Name = "email_client";
             this.email_client.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.email_client.Size = new System.Drawing.Size(288, 27);
+            this.email_client.Size = new System.Drawing.Size(288, 29);
             this.email_client.TabIndex = 3;
             // 
             // phone_client
@@ -307,7 +299,7 @@
             this.phone_client.Location = new System.Drawing.Point(19, 124);
             this.phone_client.Name = "phone_client";
             this.phone_client.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.phone_client.Size = new System.Drawing.Size(288, 27);
+            this.phone_client.Size = new System.Drawing.Size(288, 29);
             this.phone_client.TabIndex = 1;
             // 
             // name_client
@@ -316,7 +308,7 @@
             this.name_client.Location = new System.Drawing.Point(19, 56);
             this.name_client.Name = "name_client";
             this.name_client.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.name_client.Size = new System.Drawing.Size(288, 27);
+            this.name_client.Size = new System.Drawing.Size(288, 29);
             this.name_client.TabIndex = 0;
             // 
             // panel2
@@ -345,7 +337,6 @@
             this.Page_supplier.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.suppliersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
@@ -377,10 +368,9 @@
         private System.Windows.Forms.TextBox address_client;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private System.Windows.Forms.BindingSource suppliersBindingSource;
-        private DevExpress.XtraGrid.Columns.GridColumn colSuppName;
-        private DevExpress.XtraGrid.Columns.GridColumn colSuppAddress;
-        private DevExpress.XtraGrid.Columns.GridColumn colSuppPhone;
-        private DevExpress.XtraGrid.Columns.GridColumn colSuppMail;
+        private DevExpress.XtraGrid.Columns.GridColumn colName;
+        private DevExpress.XtraGrid.Columns.GridColumn colAddress;
+        private DevExpress.XtraGrid.Columns.GridColumn colPhone;
+        private DevExpress.XtraGrid.Columns.GridColumn colMail;
     }
 }

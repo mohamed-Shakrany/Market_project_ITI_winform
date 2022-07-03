@@ -14,10 +14,14 @@ namespace SalesManagmentSystem2.DAL.Models
         [Key]
         public int CustID { get; set; }
         [Display(Name = "اسم العميل")]
+        [Required]
         public string CustName { get; set; }
         [Display(Name = "عنوان العميل")]
         public string CustAddress { get; set; }
         [Display(Name = "تليفون العميل")]
+        [Index("index_customer_phone", IsUnique = true)]
+        [MaxLength(11)]
+        [Required]
         public string CustPhone { get; set; }
         [Index("index_customer_mail",IsUnique =true)]
         [Display(Name = "البريد الالكترونى")]
@@ -26,7 +30,7 @@ namespace SalesManagmentSystem2.DAL.Models
 
         #endregion
         #region relation
-        public ICollection<Order> Orders { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
         #endregion
     }
 }

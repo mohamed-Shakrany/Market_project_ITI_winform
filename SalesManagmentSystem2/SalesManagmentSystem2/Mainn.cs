@@ -18,10 +18,10 @@ namespace SalesManagmentSystem2
         SalesManagmentSystem2.FrmProduct frmProduct = new FrmProduct();
         SalesManagmentSystem2.FrmSales frmSales = new FrmSales();
         SalesManagmentSystem2.FrmPurchase frmPurchase = new FrmPurchase();
-        SalesManagmentSystem2.Player.Frm_Supplier frm_Supplier = new Player.Frm_Supplier();
         SalesManagmentSystem2.PL.FrmCustomer frmCustomer = new PL.FrmCustomer();
-        SalesManagmentSystem2.FrmUser frmUser=new FrmUser();    
-
+        SalesManagmentSystem2.FrmUser frmUser=new FrmUser();
+        SalesManagmentSystem2.PL.Frm_Supplier frm_Supplier = new PL.Frm_Supplier();
+        SalesManagmentSystem2.PL.MessageDialog messageDialog = new PL.MessageDialog();
 
 
 
@@ -111,22 +111,22 @@ namespace SalesManagmentSystem2
         //btnSales
         private void simpleButton4_Click(object sender, EventArgs e)
         {
-                pnlContent.Controls.Clear();
-                pnlContent.Controls.Add(frmSales.pnlSales);
+                //pnlContent.Controls.Clear();
+                //pnlContent.Controls.Add(frmSales.pnlSales);
         }
 
         //btnSalesDetails
         private void simpleButton3_Click_1(object sender, EventArgs e)
         {
-            pnlContent.Controls.Clear();
-            pnlContent.Controls.Add(salesDetails.pnlSalesDetails);
+            //pnlContent.Controls.Clear();
+            //pnlContent.Controls.Add(salesDetails.pnlSalesDetails);
         }
         //btnPurchase
         private void simpleButton5_Click(object sender, EventArgs e)
         {
             pnlContent.Controls.Clear();
-            var show = new Frm_Purchases();
-            pnlContent.Controls.Add(show.Purchases_details);
+            var show = new FrmPurchase();
+            pnlContent.Controls.Add(show.pnlSalesDetails);
         }
 
         //btnPurchaseDetails

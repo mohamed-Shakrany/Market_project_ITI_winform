@@ -12,8 +12,10 @@ namespace SalesManagmentSystem2.DAL.Models
     {
         #region properties
         [Key]
+        [Display(Name ="رقم الطلب")]
         public int OrderID { get; set; }
         [Display(Name = "تاريخ الطلب")]
+        [Required]
         public DateTime OrderDate { get; set; }
         [Display(Name = "اجمالى السعر")]
         [Column(TypeName = "money")]
@@ -22,14 +24,16 @@ namespace SalesManagmentSystem2.DAL.Models
 
 
         #region realtion
+        [Display(Name = "اسم المستخدم")]
         [ForeignKey("User")]
         public int? userId { get; set; }
         public User User { get; set; }
         [ForeignKey("Customer")]
+        [Display(Name = "اسم العميل")]
         public int? customerId { get; set; }
-        public Customer Customer { get; set; }  
+        public virtual Customer Customer { get; set; }  
 
-        public ICollection<OrderDetails> OrderDetails { get; set; }
+        public virtual ICollection<OrderDetails> OrderDetails { get; set; }
         #endregion
     }
 }
