@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace SalesManagmentSystem2
 {
-    public partial class FrmSalesDetails : Form
+    public partial class FrmPurchase : Form
     {
 
         //SalesManagmentSystem2.FrmSales frmSales2 = new FrmSales();
         //SalesManagmentSystem2.FrmHome frmHome = new FrmHome();
-        public FrmSalesDetails()
+        public FrmPurchase()
         {
             InitializeComponent();
         }
@@ -41,6 +41,11 @@ namespace SalesManagmentSystem2
 
             //pnlSalesDetails.Controls.Clear();
             //pnlSalesDetails.Controls.Add(frmHome.pnlhome);
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

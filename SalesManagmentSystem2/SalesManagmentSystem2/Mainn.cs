@@ -17,8 +17,11 @@ namespace SalesManagmentSystem2
         SalesManagmentSystem2.FrmCategories frmCategories = new FrmCategories();
         SalesManagmentSystem2.FrmProduct frmProduct = new FrmProduct();
         SalesManagmentSystem2.FrmSales frmSales = new FrmSales();
-        SalesManagmentSystem2.FrmSalesDetails salesDetails = new FrmSalesDetails();
-      
+        SalesManagmentSystem2.FrmPurchase frmPurchase = new FrmPurchase();
+        SalesManagmentSystem2.Player.Frm_Supplier frm_Supplier = new Player.Frm_Supplier();
+        SalesManagmentSystem2.PL.FrmCustomer frmCustomer = new PL.FrmCustomer();
+        SalesManagmentSystem2.FrmUser frmUser=new FrmUser();    
+
 
 
 
@@ -29,6 +32,8 @@ namespace SalesManagmentSystem2
             InitializeComponent();
         }
 
+
+        //btnCollapse
         private void simpleButton1_Click(object sender, EventArgs e)
         {
             if (pnlright.Width == 243)
@@ -54,6 +59,7 @@ namespace SalesManagmentSystem2
             Environment.Exit(0);
         }
 
+        //btnMax
         private void btnMax_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
@@ -68,6 +74,7 @@ namespace SalesManagmentSystem2
             }
         }
 
+        //btnMin
         private void btnMin_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
@@ -78,36 +85,43 @@ namespace SalesManagmentSystem2
 
         }
 
+
+        //btnHome
+        //btnHome
         private void btnCat_Click(object sender, EventArgs e)
         {
             pnlContent.Controls.Clear();
             pnlContent.Controls.Add(home.pnlhome);
         }
 
+        //btnCategory
         private void simpleButton3_Click(object sender, EventArgs e)
         {
             pnlContent.Controls.Clear();
             pnlContent.Controls.Add(frmCategories.pnlCat);
         }
 
+        //btnProduct
         private void simpleButton2_Click(object sender, EventArgs e)
         {
             pnlContent.Controls.Clear();
             pnlContent.Controls.Add(frmProduct.pnlProduct);
         }
 
+        //btnSales
         private void simpleButton4_Click(object sender, EventArgs e)
         {
                 pnlContent.Controls.Clear();
                 pnlContent.Controls.Add(frmSales.pnlSales);
         }
 
+        //btnSalesDetails
         private void simpleButton3_Click_1(object sender, EventArgs e)
         {
             pnlContent.Controls.Clear();
             pnlContent.Controls.Add(salesDetails.pnlSalesDetails);
         }
-
+        //btnPurchase
         private void simpleButton5_Click(object sender, EventArgs e)
         {
             pnlContent.Controls.Clear();
@@ -115,11 +129,34 @@ namespace SalesManagmentSystem2
             pnlContent.Controls.Add(show.Purchases_details);
         }
 
+        //btnPurchaseDetails
         private void simpleButton2_Click_1(object sender, EventArgs e)
         {
             pnlContent.Controls.Clear();
-            var show = new FrmPurchasesDetails();
+            var show = new FrmSales();
             pnlContent.Controls.Add(show.Purchases_details);
+        }
+
+        //btnSupplier
+        private void simpleButton8_Click(object sender, EventArgs e)
+        {
+            this.pnlContent.Controls.Clear();
+            this.pnlContent.Controls.Add(frm_Supplier.Page_supplier);
+        }
+
+        //btnUsers
+        private void btnUsers_Click(object sender, EventArgs e)
+        {
+            this.pnlContent.Controls.Clear();
+            this.pnlContent.Controls.Add(frmUser.pnlUser);
+        }
+
+        //btnCustomers
+        private void btnCustomers_Click(object sender, EventArgs e)
+        {
+            pnlContent.Controls.Clear();
+            pnlContent.Controls.Add(frmCategories.pnlCat);
+
         }
     }
 }

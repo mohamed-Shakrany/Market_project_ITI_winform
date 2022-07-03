@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace SalesManagmentSystem2
 {
-    public partial class FrmPurchasesDetails : Form
+    public partial class FrmSales : Form
     {
         public Panel Purchases_details
         {
@@ -22,7 +22,7 @@ namespace SalesManagmentSystem2
 
         //SalesManagmentSystem2.FrmSales frmSales2 = new FrmSales();
         //SalesManagmentSystem2.FrmHome frmHome = new FrmHome();
-        public FrmPurchasesDetails()
+        public FrmSales()
         {
             InitializeComponent();
         }

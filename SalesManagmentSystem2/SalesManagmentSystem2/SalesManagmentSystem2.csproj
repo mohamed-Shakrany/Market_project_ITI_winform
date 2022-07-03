@@ -39,15 +39,23 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>C:\Users\abdul\OneDrive\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Drawing.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraLayout.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -88,37 +96,37 @@
     <Compile Include="FrmCategories.Designer.cs">
       <DependentUpon>FrmCategories.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmProduct.Designer.cs">
+    <Compile Include="FrmProduct.designer.cs">
       <DependentUpon>FrmProduct.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmPurchasesDetails .cs">
+    <Compile Include="FrmSales .cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmPurchasesDetails .Designer.cs">
-      <DependentUpon>FrmPurchasesDetails .cs</DependentUpon>
+    <Compile Include="FrmSales .Designer.cs">
+      <DependentUpon>FrmSales .cs</DependentUpon>
     </Compile>
-    <Compile Include="Frm_Purchases.cs">
+    <Compile Include="FrmPurchase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frm_Purchases.Designer.cs">
-      <DependentUpon>Frm_Purchases.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmSales.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSales.Designer.cs">
-      <DependentUpon>FrmSales.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FrmSalesDetails.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FrmSalesDetails.Designer.cs">
-      <DependentUpon>FrmSalesDetails.cs</DependentUpon>
+    <Compile Include="FrmPurchase.Designer.cs">
+      <DependentUpon>FrmPurchase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="PL\FrmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmUser.Designer.cs">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="PL\FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -131,31 +139,58 @@
     <Compile Include="Mainn.Designer.cs">
       <DependentUpon>Mainn.cs</DependentUpon>
     </Compile>
+    <Compile Include="PL\FrmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\FrmCustomer.Designer.cs">
+      <DependentUpon>FrmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\Frm_Supplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\Frm_Supplier.designer.cs">
+      <DependentUpon>Frm_Supplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PL\MessageDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PL\MessageDialog.designer.cs">
+      <DependentUpon>MessageDialog.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmCategories.resx">
       <DependentUpon>FrmCategories.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmProduct.resx">
       <DependentUpon>FrmProduct.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmPurchasesDetails .resx">
-      <DependentUpon>FrmPurchasesDetails .cs</DependentUpon>
+    <EmbeddedResource Include="FrmSales .resx">
+      <DependentUpon>FrmSales .cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frm_Purchases.resx">
-      <DependentUpon>Frm_Purchases.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSales.resx">
-      <DependentUpon>FrmSales.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FrmSalesDetails.resx">
-      <DependentUpon>FrmSalesDetails.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPurchase.resx">
+      <DependentUpon>FrmPurchase.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Mainn.resx">
       <DependentUpon>Mainn.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmUser.resx">
+      <DependentUpon>FrmUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PL\FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\FrmCustomer.resx">
+      <DependentUpon>FrmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\Frm_Supplier.resx">
+      <DependentUpon>Frm_Supplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PL\MessageDialog.resx">
+      <DependentUpon>MessageDialog.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

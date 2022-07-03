@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SalesManagmentSystem2
 {
-    public partial class FrmSales : Form
+    public partial class FrmUser : Form
     {
-        public FrmSales()
+        public FrmUser()
         {
             InitializeComponent();
-        }
-
-        private void simpleButton5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

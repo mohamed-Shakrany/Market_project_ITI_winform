@@ -33,21 +33,21 @@
             this.flowLayoutRight = new System.Windows.Forms.FlowLayoutPanel();
             this.btnHome = new DevExpress.XtraEditors.SimpleButton();
             this.btnSales = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
-            this.PurchasesDetails = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton6 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton9 = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton8 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSalesDetails = new DevExpress.XtraEditors.SimpleButton();
+            this.btnPurchase = new DevExpress.XtraEditors.SimpleButton();
+            this.btnPurchasesDetails = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCustomers = new DevExpress.XtraEditors.SimpleButton();
+            this.btnUsers = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSuppliers = new DevExpress.XtraEditors.SimpleButton();
             this.btnProduct = new DevExpress.XtraEditors.SimpleButton();
-            this.simpleButton7 = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCattegory = new DevExpress.XtraEditors.SimpleButton();
+            this.btnReports = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCategory = new DevExpress.XtraEditors.SimpleButton();
             this.pnlnav = new System.Windows.Forms.Panel();
             this.pnlcollapse = new System.Windows.Forms.FlowLayoutPanel();
-            this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
+            this.btnCollapse = new DevExpress.XtraEditors.SimpleButton();
             this.pnlnavTitle = new System.Windows.Forms.Panel();
-            this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.lblRoll = new DevExpress.XtraEditors.LabelControl();
+            this.lblUsername = new DevExpress.XtraEditors.LabelControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTop = new System.Windows.Forms.Panel();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -80,15 +80,15 @@
             // 
             this.flowLayoutRight.Controls.Add(this.btnHome);
             this.flowLayoutRight.Controls.Add(this.btnSales);
-            this.flowLayoutRight.Controls.Add(this.simpleButton3);
-            this.flowLayoutRight.Controls.Add(this.simpleButton5);
-            this.flowLayoutRight.Controls.Add(this.PurchasesDetails);
-            this.flowLayoutRight.Controls.Add(this.simpleButton6);
-            this.flowLayoutRight.Controls.Add(this.simpleButton9);
-            this.flowLayoutRight.Controls.Add(this.simpleButton8);
+            this.flowLayoutRight.Controls.Add(this.btnSalesDetails);
+            this.flowLayoutRight.Controls.Add(this.btnPurchase);
+            this.flowLayoutRight.Controls.Add(this.btnPurchasesDetails);
+            this.flowLayoutRight.Controls.Add(this.btnCustomers);
+            this.flowLayoutRight.Controls.Add(this.btnUsers);
+            this.flowLayoutRight.Controls.Add(this.btnSuppliers);
             this.flowLayoutRight.Controls.Add(this.btnProduct);
-            this.flowLayoutRight.Controls.Add(this.simpleButton7);
-            this.flowLayoutRight.Controls.Add(this.btnCattegory);
+            this.flowLayoutRight.Controls.Add(this.btnReports);
+            this.flowLayoutRight.Controls.Add(this.btnCategory);
             this.flowLayoutRight.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutRight.Location = new System.Drawing.Point(0, 169);
             this.flowLayoutRight.Name = "flowLayoutRight";
@@ -132,110 +132,113 @@
             this.btnSales.Text = "المبيعات";
             this.btnSales.Click += new System.EventHandler(this.simpleButton4_Click);
             // 
-            // simpleButton3
+            // btnSalesDetails
             // 
-            this.simpleButton3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton3.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.simpleButton3.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.simpleButton3.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
-            this.simpleButton3.Appearance.Options.UseBackColor = true;
-            this.simpleButton3.Appearance.Options.UseFont = true;
-            this.simpleButton3.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
-            this.simpleButton3.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.simpleButton3.Location = new System.Drawing.Point(1, 89);
-            this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(239, 37);
-            this.simpleButton3.TabIndex = 27;
-            this.simpleButton3.Text = "تفاصيل المبيعات";
-            this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click_1);
+            this.btnSalesDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSalesDetails.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnSalesDetails.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnSalesDetails.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
+            this.btnSalesDetails.Appearance.Options.UseBackColor = true;
+            this.btnSalesDetails.Appearance.Options.UseFont = true;
+            this.btnSalesDetails.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnSalesDetails.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
+            this.btnSalesDetails.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnSalesDetails.Location = new System.Drawing.Point(1, 89);
+            this.btnSalesDetails.Name = "btnSalesDetails";
+            this.btnSalesDetails.Size = new System.Drawing.Size(239, 37);
+            this.btnSalesDetails.TabIndex = 27;
+            this.btnSalesDetails.Text = "تفاصيل المبيعات";
+            this.btnSalesDetails.Click += new System.EventHandler(this.simpleButton3_Click_1);
             // 
-            // simpleButton5
+            // btnPurchase
             // 
-            this.simpleButton5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton5.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.simpleButton5.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.simpleButton5.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
-            this.simpleButton5.Appearance.Options.UseBackColor = true;
-            this.simpleButton5.Appearance.Options.UseFont = true;
-            this.simpleButton5.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton5.ImageOptions.SvgImage")));
-            this.simpleButton5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.simpleButton5.Location = new System.Drawing.Point(1, 132);
-            this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(239, 37);
-            this.simpleButton5.TabIndex = 27;
-            this.simpleButton5.Text = "المشتريات";
-            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
+            this.btnPurchase.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPurchase.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnPurchase.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnPurchase.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
+            this.btnPurchase.Appearance.Options.UseBackColor = true;
+            this.btnPurchase.Appearance.Options.UseFont = true;
+            this.btnPurchase.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnPurchase.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton5.ImageOptions.SvgImage")));
+            this.btnPurchase.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnPurchase.Location = new System.Drawing.Point(1, 132);
+            this.btnPurchase.Name = "btnPurchase";
+            this.btnPurchase.Size = new System.Drawing.Size(239, 37);
+            this.btnPurchase.TabIndex = 27;
+            this.btnPurchase.Text = "المشتريات";
+            this.btnPurchase.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
-            // PurchasesDetails
+            // btnPurchasesDetails
             // 
-            this.PurchasesDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PurchasesDetails.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.PurchasesDetails.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.PurchasesDetails.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
-            this.PurchasesDetails.Appearance.Options.UseBackColor = true;
-            this.PurchasesDetails.Appearance.Options.UseFont = true;
-            this.PurchasesDetails.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.PurchasesDetails.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("PurchasesDetails.ImageOptions.SvgImage")));
-            this.PurchasesDetails.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.PurchasesDetails.Location = new System.Drawing.Point(1, 175);
-            this.PurchasesDetails.Name = "PurchasesDetails";
-            this.PurchasesDetails.Size = new System.Drawing.Size(239, 37);
-            this.PurchasesDetails.TabIndex = 28;
-            this.PurchasesDetails.Text = "تفاصيل المشتريات";
-            this.PurchasesDetails.Click += new System.EventHandler(this.simpleButton2_Click_1);
+            this.btnPurchasesDetails.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnPurchasesDetails.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnPurchasesDetails.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnPurchasesDetails.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
+            this.btnPurchasesDetails.Appearance.Options.UseBackColor = true;
+            this.btnPurchasesDetails.Appearance.Options.UseFont = true;
+            this.btnPurchasesDetails.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnPurchasesDetails.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("PurchasesDetails.ImageOptions.SvgImage")));
+            this.btnPurchasesDetails.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnPurchasesDetails.Location = new System.Drawing.Point(1, 175);
+            this.btnPurchasesDetails.Name = "btnPurchasesDetails";
+            this.btnPurchasesDetails.Size = new System.Drawing.Size(239, 37);
+            this.btnPurchasesDetails.TabIndex = 28;
+            this.btnPurchasesDetails.Text = "تفاصيل المشتريات";
+            this.btnPurchasesDetails.Click += new System.EventHandler(this.simpleButton2_Click_1);
             // 
-            // simpleButton6
+            // btnCustomers
             // 
-            this.simpleButton6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton6.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.simpleButton6.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.simpleButton6.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
-            this.simpleButton6.Appearance.Options.UseBackColor = true;
-            this.simpleButton6.Appearance.Options.UseFont = true;
-            this.simpleButton6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
-            this.simpleButton6.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.simpleButton6.Location = new System.Drawing.Point(1, 218);
-            this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(239, 37);
-            this.simpleButton6.TabIndex = 28;
-            this.simpleButton6.Text = "العملاء";
+            this.btnCustomers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCustomers.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnCustomers.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnCustomers.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
+            this.btnCustomers.Appearance.Options.UseBackColor = true;
+            this.btnCustomers.Appearance.Options.UseFont = true;
+            this.btnCustomers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton6.ImageOptions.Image")));
+            this.btnCustomers.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnCustomers.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnCustomers.Location = new System.Drawing.Point(1, 218);
+            this.btnCustomers.Name = "btnCustomers";
+            this.btnCustomers.Size = new System.Drawing.Size(239, 37);
+            this.btnCustomers.TabIndex = 28;
+            this.btnCustomers.Text = "العملاء";
+            this.btnCustomers.Click += new System.EventHandler(this.btnCustomers_Click);
             // 
-            // simpleButton9
+            // btnUsers
             // 
-            this.simpleButton9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton9.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.simpleButton9.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.simpleButton9.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
-            this.simpleButton9.Appearance.Options.UseBackColor = true;
-            this.simpleButton9.Appearance.Options.UseFont = true;
-            this.simpleButton9.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton9.ImageOptions.SvgImage")));
-            this.simpleButton9.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.simpleButton9.Location = new System.Drawing.Point(1, 261);
-            this.simpleButton9.Name = "simpleButton9";
-            this.simpleButton9.Size = new System.Drawing.Size(239, 37);
-            this.simpleButton9.TabIndex = 29;
-            this.simpleButton9.Text = "المستخدمين";
+            this.btnUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUsers.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnUsers.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnUsers.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
+            this.btnUsers.Appearance.Options.UseBackColor = true;
+            this.btnUsers.Appearance.Options.UseFont = true;
+            this.btnUsers.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnUsers.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton9.ImageOptions.SvgImage")));
+            this.btnUsers.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnUsers.Location = new System.Drawing.Point(1, 261);
+            this.btnUsers.Name = "btnUsers";
+            this.btnUsers.Size = new System.Drawing.Size(239, 37);
+            this.btnUsers.TabIndex = 29;
+            this.btnUsers.Text = "المستخدمين";
+            this.btnUsers.Click += new System.EventHandler(this.btnUsers_Click);
             // 
-            // simpleButton8
+            // btnSuppliers
             // 
-            this.simpleButton8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton8.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.simpleButton8.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.simpleButton8.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
-            this.simpleButton8.Appearance.Options.UseBackColor = true;
-            this.simpleButton8.Appearance.Options.UseFont = true;
-            this.simpleButton8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.ImageOptions.Image")));
-            this.simpleButton8.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton8.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.simpleButton8.Location = new System.Drawing.Point(1, 304);
-            this.simpleButton8.Name = "simpleButton8";
-            this.simpleButton8.Size = new System.Drawing.Size(239, 37);
-            this.simpleButton8.TabIndex = 30;
-            this.simpleButton8.Text = "الموردين";
+            this.btnSuppliers.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSuppliers.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnSuppliers.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnSuppliers.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
+            this.btnSuppliers.Appearance.Options.UseBackColor = true;
+            this.btnSuppliers.Appearance.Options.UseFont = true;
+            this.btnSuppliers.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton8.ImageOptions.Image")));
+            this.btnSuppliers.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnSuppliers.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnSuppliers.Location = new System.Drawing.Point(1, 304);
+            this.btnSuppliers.Name = "btnSuppliers";
+            this.btnSuppliers.Size = new System.Drawing.Size(239, 37);
+            this.btnSuppliers.TabIndex = 30;
+            this.btnSuppliers.Text = "الموردين";
+            this.btnSuppliers.Click += new System.EventHandler(this.simpleButton8_Click);
             // 
             // btnProduct
             // 
@@ -255,40 +258,40 @@
             this.btnProduct.Text = "المنتجات";
             this.btnProduct.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
-            // simpleButton7
+            // btnReports
             // 
-            this.simpleButton7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.simpleButton7.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.simpleButton7.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.simpleButton7.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
-            this.simpleButton7.Appearance.Options.UseBackColor = true;
-            this.simpleButton7.Appearance.Options.UseFont = true;
-            this.simpleButton7.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
-            this.simpleButton7.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.simpleButton7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.simpleButton7.Location = new System.Drawing.Point(1, 390);
-            this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(239, 37);
-            this.simpleButton7.TabIndex = 31;
-            this.simpleButton7.Text = "التقارير";
+            this.btnReports.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReports.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnReports.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnReports.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
+            this.btnReports.Appearance.Options.UseBackColor = true;
+            this.btnReports.Appearance.Options.UseFont = true;
+            this.btnReports.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton7.ImageOptions.Image")));
+            this.btnReports.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnReports.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnReports.Location = new System.Drawing.Point(1, 390);
+            this.btnReports.Name = "btnReports";
+            this.btnReports.Size = new System.Drawing.Size(239, 37);
+            this.btnReports.TabIndex = 31;
+            this.btnReports.Text = "التقارير";
             // 
-            // btnCattegory
+            // btnCategory
             // 
-            this.btnCattegory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCattegory.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.btnCattegory.Appearance.BackColor2 = System.Drawing.Color.White;
-            this.btnCattegory.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
-            this.btnCattegory.Appearance.Options.UseBackColor = true;
-            this.btnCattegory.Appearance.Options.UseFont = true;
-            this.btnCattegory.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCattegory.ImageOptions.Image")));
-            this.btnCattegory.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
-            this.btnCattegory.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnCattegory.Location = new System.Drawing.Point(1, 433);
-            this.btnCattegory.Name = "btnCattegory";
-            this.btnCattegory.Size = new System.Drawing.Size(239, 37);
-            this.btnCattegory.TabIndex = 25;
-            this.btnCattegory.Text = "الاصناف";
-            this.btnCattegory.Click += new System.EventHandler(this.simpleButton3_Click);
+            this.btnCategory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCategory.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnCategory.Appearance.BackColor2 = System.Drawing.Color.White;
+            this.btnCategory.Appearance.Font = new System.Drawing.Font("Candara Light", 15.75F);
+            this.btnCategory.Appearance.Options.UseBackColor = true;
+            this.btnCategory.Appearance.Options.UseFont = true;
+            this.btnCategory.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCattegory.ImageOptions.Image")));
+            this.btnCategory.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleLeft;
+            this.btnCategory.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.btnCategory.Location = new System.Drawing.Point(1, 433);
+            this.btnCategory.Name = "btnCategory";
+            this.btnCategory.Size = new System.Drawing.Size(239, 37);
+            this.btnCategory.TabIndex = 25;
+            this.btnCategory.Text = "الاصناف";
+            this.btnCategory.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
             // pnlnav
             // 
@@ -302,58 +305,58 @@
             // 
             // pnlcollapse
             // 
-            this.pnlcollapse.Controls.Add(this.simpleButton1);
+            this.pnlcollapse.Controls.Add(this.btnCollapse);
             this.pnlcollapse.Location = new System.Drawing.Point(181, 0);
             this.pnlcollapse.Name = "pnlcollapse";
             this.pnlcollapse.Size = new System.Drawing.Size(55, 169);
             this.pnlcollapse.TabIndex = 0;
             // 
-            // simpleButton1
+            // btnCollapse
             // 
-            this.simpleButton1.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.simpleButton1.Appearance.Options.UseBackColor = true;
-            this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.simpleButton1.Location = new System.Drawing.Point(2, 3);
-            this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(50, 40);
-            this.simpleButton1.TabIndex = 5;
-            this.simpleButton1.Text = "simpleButton1";
-            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
+            this.btnCollapse.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.btnCollapse.Appearance.Options.UseBackColor = true;
+            this.btnCollapse.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
+            this.btnCollapse.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
+            this.btnCollapse.Location = new System.Drawing.Point(2, 3);
+            this.btnCollapse.Name = "btnCollapse";
+            this.btnCollapse.Size = new System.Drawing.Size(50, 40);
+            this.btnCollapse.TabIndex = 5;
+            this.btnCollapse.Text = "simpleButton1";
+            this.btnCollapse.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // pnlnavTitle
             // 
-            this.pnlnavTitle.Controls.Add(this.labelControl3);
-            this.pnlnavTitle.Controls.Add(this.labelControl2);
+            this.pnlnavTitle.Controls.Add(this.lblRoll);
+            this.pnlnavTitle.Controls.Add(this.lblUsername);
             this.pnlnavTitle.Controls.Add(this.pictureBox1);
             this.pnlnavTitle.Location = new System.Drawing.Point(3, 3);
             this.pnlnavTitle.Name = "pnlnavTitle";
             this.pnlnavTitle.Size = new System.Drawing.Size(150, 160);
             this.pnlnavTitle.TabIndex = 2;
             // 
-            // labelControl3
+            // lblRoll
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.labelControl3.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(62, 135);
-            this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(30, 18);
-            this.labelControl3.TabIndex = 4;
-            this.labelControl3.Text = "أدمن";
+            this.lblRoll.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.lblRoll.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lblRoll.Appearance.Options.UseFont = true;
+            this.lblRoll.Appearance.Options.UseForeColor = true;
+            this.lblRoll.Location = new System.Drawing.Point(62, 135);
+            this.lblRoll.Name = "lblRoll";
+            this.lblRoll.Size = new System.Drawing.Size(28, 17);
+            this.lblRoll.TabIndex = 4;
+            this.lblRoll.Text = "أدمن";
             // 
-            // labelControl2
+            // lblUsername
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
-            this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
-            this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(30, 111);
-            this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(99, 22);
-            this.labelControl2.TabIndex = 3;
-            this.labelControl2.Text = "عبدالله حسن";
+            this.lblUsername.Appearance.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.lblUsername.Appearance.ForeColor = System.Drawing.Color.White;
+            this.lblUsername.Appearance.Options.UseFont = true;
+            this.lblUsername.Appearance.Options.UseForeColor = true;
+            this.lblUsername.Location = new System.Drawing.Point(30, 111);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(88, 19);
+            this.lblUsername.TabIndex = 3;
+            this.lblUsername.Text = "عبدالله حسن";
             // 
             // pictureBox1
             // 
@@ -387,7 +390,7 @@
             this.labelControl1.Appearance.Options.UseForeColor = true;
             this.labelControl1.Location = new System.Drawing.Point(498, 11);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(118, 40);
+            this.labelControl1.Size = new System.Drawing.Size(107, 36);
             this.labelControl1.TabIndex = 7;
             this.labelControl1.Text = "الرئيسية";
             // 
@@ -448,6 +451,7 @@
             this.Controls.Add(this.pnlright);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Mainn";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Mainn";
             this.pnlright.ResumeLayout(false);
             this.flowLayoutRight.ResumeLayout(false);
@@ -469,18 +473,18 @@
         private DevExpress.XtraEditors.SimpleButton btnHome;
         private DevExpress.XtraEditors.SimpleButton btnSales;
         private DevExpress.XtraEditors.SimpleButton btnProduct;
-        private DevExpress.XtraEditors.SimpleButton simpleButton5;
-        private DevExpress.XtraEditors.SimpleButton btnCattegory;
-        private DevExpress.XtraEditors.SimpleButton simpleButton6;
-        private DevExpress.XtraEditors.SimpleButton simpleButton9;
-        private DevExpress.XtraEditors.SimpleButton simpleButton8;
-        private DevExpress.XtraEditors.SimpleButton simpleButton7;
+        private DevExpress.XtraEditors.SimpleButton btnPurchase;
+        private DevExpress.XtraEditors.SimpleButton btnCategory;
+        private DevExpress.XtraEditors.SimpleButton btnCustomers;
+        private DevExpress.XtraEditors.SimpleButton btnUsers;
+        private DevExpress.XtraEditors.SimpleButton btnSuppliers;
+        private DevExpress.XtraEditors.SimpleButton btnReports;
         private System.Windows.Forms.Panel pnlnav;
         private System.Windows.Forms.FlowLayoutPanel pnlcollapse;
-        private DevExpress.XtraEditors.SimpleButton simpleButton1;
+        private DevExpress.XtraEditors.SimpleButton btnCollapse;
         private System.Windows.Forms.Panel pnlnavTitle;
-        private DevExpress.XtraEditors.LabelControl labelControl3;
-        private DevExpress.XtraEditors.LabelControl labelControl2;
+        private DevExpress.XtraEditors.LabelControl lblRoll;
+        private DevExpress.XtraEditors.LabelControl lblUsername;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlTop;
         private DevExpress.XtraEditors.LabelControl labelControl1;
@@ -488,7 +492,7 @@
         private DevExpress.XtraEditors.SimpleButton btnMin;
         private DevExpress.XtraEditors.SimpleButton btnclose;
         private System.Windows.Forms.Panel pnlContent;
-        private DevExpress.XtraEditors.SimpleButton simpleButton3;
-        private DevExpress.XtraEditors.SimpleButton PurchasesDetails;
+        private DevExpress.XtraEditors.SimpleButton btnSalesDetails;
+        private DevExpress.XtraEditors.SimpleButton btnPurchasesDetails;
     }
 }
