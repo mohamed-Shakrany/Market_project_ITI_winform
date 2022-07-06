@@ -111,12 +111,12 @@ namespace SalesManagmentSystem2
         public void ch(Label l)
         {
             //Total_Item_Purchased = l;
-            ////while (check_quantity && Check_Price && !String.IsNullOrEmpty(Quantity_Purchased.Text) && !String.IsNullOrEmpty(Purchasing_Price.Text))
-            ////{
-            ////    //  var m = int.Parse(quantity_check.Text) * int.Parse(price_check.Text);
-            ////    Total_Item_Purchased.Text = (int.Parse(Quantity_Purchased.Text) * int.Parse(Purchasing_Price.Text)).ToString();
+            //while (check_quantity && Check_Price && !String.IsNullOrEmpty(Quantity_Purchased.Text) && !String.IsNullOrEmpty(Purchasing_Price.Text))
+            //{
+            //    //  var m = int.Parse(quantity_check.Text) * int.Parse(price_check.Text);
+            //    Total_Item_Purchased.Text = (int.Parse(Quantity_Purchased.Text) * int.Parse(Purchasing_Price.Text)).ToString();
 
-            ////}
+            //}
         }
 
     }

@@ -39,23 +39,15 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>C:\Users\abdul\OneDrive\Desktop\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_WinForms_1.11.5.1\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.Desktop.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Data.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Drawing.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Data.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Printing.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Sparkline.v22.1.Core, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraGrid.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraLayout.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraPrinting.v22.1, Version=22.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
@@ -63,11 +55,13 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -90,6 +84,7 @@
     <Compile Include="DAL\Models\Product.cs" />
     <Compile Include="DAL\Models\Supplier.cs" />
     <Compile Include="DAL\Models\User.cs" />
+    <Compile Include="FormattedDbEntityValidationException.cs" />
     <Compile Include="FrmCategories.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +114,59 @@
     </Compile>
     <Compile Include="FrmPurchase.Designer.cs">
       <DependentUpon>FrmPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMSDbDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryMSDbDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMSDbDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryMSDbDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMSDbDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryMSDbDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMSDbDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryMSDbDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMSDbDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryMSDbDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMSDbDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryMSDbDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMSDbDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryMSDbDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMSDbDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryMSDbDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="InventoryMSDbDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InventoryMSDbDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207032326287_AfterEditing.cs" />
+    <Compile Include="Migrations\202207032326287_AfterEditing.designer.cs">
+      <DependentUpon>202207032326287_AfterEditing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202207041628098_c.cs" />
+    <Compile Include="Migrations\202207041628098_c.designer.cs">
+      <DependentUpon>202207041628098_c.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="PL\FrmUser.cs">
@@ -159,6 +207,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Purchasing_invoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Purchasing_invoice.Designer.cs">
+      <DependentUpon>Purchasing_invoice.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FrmCategories.resx">
       <DependentUpon>FrmCategories.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,6 +230,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Mainn.resx">
       <DependentUpon>Mainn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207032326287_AfterEditing.resx">
+      <DependentUpon>202207032326287_AfterEditing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202207041628098_c.resx">
+      <DependentUpon>202207041628098_c.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PL\FrmUser.resx">
       <DependentUpon>FrmUser.cs</DependentUpon>
@@ -202,6 +262,108 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Purchasing_invoice.resx">
+      <DependentUpon>Purchasing_invoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="InventoryMSDbDataSet.xsc">
+      <DependentUpon>InventoryMSDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryMSDbDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InventoryMSDbDataSet.xss">
+      <DependentUpon>InventoryMSDbDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet1.xsc">
+      <DependentUpon>InventoryMSDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryMSDbDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InventoryMSDbDataSet1.xss">
+      <DependentUpon>InventoryMSDbDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet2.xsc">
+      <DependentUpon>InventoryMSDbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryMSDbDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InventoryMSDbDataSet2.xss">
+      <DependentUpon>InventoryMSDbDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet3.xsc">
+      <DependentUpon>InventoryMSDbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryMSDbDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InventoryMSDbDataSet3.xss">
+      <DependentUpon>InventoryMSDbDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet4.xsc">
+      <DependentUpon>InventoryMSDbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryMSDbDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InventoryMSDbDataSet4.xss">
+      <DependentUpon>InventoryMSDbDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet5.xsc">
+      <DependentUpon>InventoryMSDbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryMSDbDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InventoryMSDbDataSet5.xss">
+      <DependentUpon>InventoryMSDbDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet6.xsc">
+      <DependentUpon>InventoryMSDbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryMSDbDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InventoryMSDbDataSet6.xss">
+      <DependentUpon>InventoryMSDbDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet7.xsc">
+      <DependentUpon>InventoryMSDbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryMSDbDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InventoryMSDbDataSet7.xss">
+      <DependentUpon>InventoryMSDbDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet8.xsc">
+      <DependentUpon>InventoryMSDbDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="InventoryMSDbDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>InventoryMSDbDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="InventoryMSDbDataSet8.xss">
+      <DependentUpon>InventoryMSDbDataSet8.xsd</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -29,6 +29,9 @@ namespace SalesManagmentSystem2.DAL.Models
         public int Total_quantity { get; set; }
         [Column(TypeName ="date")]
         [Display(Name = "تاريخ انتاج المنتج")]
+
+        [DataType(DataType.DateTime)]
+
         public DateTime ProductDate { get; set; }
         [Column(TypeName = "date")]
         [Display(Name = "تاريخ انتهاء المنتج")]

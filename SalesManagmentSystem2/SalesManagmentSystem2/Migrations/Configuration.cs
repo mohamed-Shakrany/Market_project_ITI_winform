@@ -9,8 +9,8 @@
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
-            ContextKey = "SalesManagmentSystem2.DAL.DbInventory.InventoryDB";
+            AutomaticMigrationsEnabled = false;
+            //AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(SalesManagmentSystem2.DAL.DbInventory.InventoryDB context)

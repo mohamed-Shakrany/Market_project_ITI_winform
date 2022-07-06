@@ -340,7 +340,6 @@
             this.pnlTop.Name = "pnlTop";
             this.pnlTop.Size = new System.Drawing.Size(957, 60);
             this.pnlTop.TabIndex = 3;
-            this.pnlTop.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlTop_Paint);
             // 
             // labelControl1
             // 

@@ -13,6 +13,7 @@ using SalesManagmentSystem2.DAL.Models;
 using SalesManagmentSystem2.DAL.DbInventory;
 
 
+
 namespace SalesManagmentSystem2.PL
 {
 
@@ -180,6 +181,11 @@ namespace SalesManagmentSystem2.PL
         }
 
         private void gridControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
         {
 
         }

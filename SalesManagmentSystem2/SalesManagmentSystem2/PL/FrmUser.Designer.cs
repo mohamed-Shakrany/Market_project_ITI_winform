@@ -31,9 +31,11 @@ namespace SalesManagmentSystem2
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmUser));
             this.pnlUser = new System.Windows.Forms.Panel();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.griduser = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colSuppName = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSuppAddress = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -56,17 +58,21 @@ namespace SalesManagmentSystem2
             this.label7 = new System.Windows.Forms.Label();
             this.Purchasing_Price = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.inventoryMSDbDataSet = new SalesManagmentSystem2.InventoryMSDbDataSet();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.usersTableAdapter = new SalesManagmentSystem2.InventoryMSDbDataSetTableAdapters.UsersTableAdapter();
             this.pnlUser.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.griduser)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventoryMSDbDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // pnlUser
             // 
             this.pnlUser.Controls.Add(this.pictureBox1);
-            this.pnlUser.Controls.Add(this.gridControl1);
+            this.pnlUser.Controls.Add(this.griduser);
             this.pnlUser.Controls.Add(this.radioButton2);
             this.pnlUser.Controls.Add(this.radioButton1);
             this.pnlUser.Controls.Add(this.label5);
@@ -90,16 +96,28 @@ namespace SalesManagmentSystem2
             this.pnlUser.Size = new System.Drawing.Size(941, 621);
             this.pnlUser.TabIndex = 0;
             // 
-            // gridControl1
+            // pictureBox1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(6, 131);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.gridControl1.Size = new System.Drawing.Size(590, 459);
-            this.gridControl1.TabIndex = 93;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(215, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(120, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 94;
+            this.pictureBox1.TabStop = false;
+            // 
+            // griduser
+            // 
+            this.griduser.DataSource = this.usersBindingSource;
+            this.griduser.Location = new System.Drawing.Point(6, 131);
+            this.griduser.MainView = this.gridView1;
+            this.griduser.Name = "griduser";
+            this.griduser.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.griduser.Size = new System.Drawing.Size(590, 459);
+            this.griduser.TabIndex = 93;
+            this.griduser.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
+            this.griduser.Click += new System.EventHandler(this.gridControl1_Click);
             // 
             // gridView1
             // 
@@ -109,7 +127,7 @@ namespace SalesManagmentSystem2
             this.colSuppPhone,
             this.colSuppMail});
             this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
-            this.gridView1.GridControl = this.gridControl1;
+            this.gridView1.GridControl = this.griduser;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.AutoSelectAllInEditor = false;
             this.gridView1.OptionsBehavior.Editable = false;
@@ -328,15 +346,19 @@ namespace SalesManagmentSystem2
             this.label4.TabIndex = 75;
             this.label4.Text = "العنوان";
             // 
-            // pictureBox1
+            // inventoryMSDbDataSet
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(215, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(120, 64);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 94;
-            this.pictureBox1.TabStop = false;
+            this.inventoryMSDbDataSet.DataSetName = "InventoryMSDbDataSet";
+            this.inventoryMSDbDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataMember = "Users";
+            this.usersBindingSource.DataSource = this.inventoryMSDbDataSet;
+            // 
+            // usersTableAdapter
+            // 
+            this.usersTableAdapter.ClearBeforeFill = true;
             // 
             // FrmUser
             // 
@@ -347,11 +369,14 @@ namespace SalesManagmentSystem2
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmUser";
             this.Text = "FrmCustomer";
+            this.Load += new System.EventHandler(this.FrmUser_Load);
             this.pnlUser.ResumeLayout(false);
             this.pnlUser.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.griduser)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inventoryMSDbDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -374,7 +399,7 @@ namespace SalesManagmentSystem2
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
-        private GridControl gridControl1;
+        private GridControl griduser;
         private GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn colSuppName;
         private DevExpress.XtraGrid.Columns.GridColumn colSuppAddress;
@@ -382,5 +407,8 @@ namespace SalesManagmentSystem2
         private DevExpress.XtraGrid.Columns.GridColumn colSuppMail;
         public System.Windows.Forms.Panel pnlUser;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private InventoryMSDbDataSet inventoryMSDbDataSet;
+        private System.Windows.Forms.BindingSource usersBindingSource;
+        private InventoryMSDbDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
     }
 }

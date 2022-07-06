@@ -19,8 +19,10 @@ namespace SalesManagmentSystem2
         SalesManagmentSystem2.FrmSales frmSales = new FrmSales();
         SalesManagmentSystem2.FrmPurchase frmPurchase = new FrmPurchase();
         SalesManagmentSystem2.PL.FrmCustomer frmCustomer = new PL.FrmCustomer();
-        SalesManagmentSystem2.FrmUser frmUser=new FrmUser();
-        SalesManagmentSystem2.PL.Frm_Supplier frm_Supplier = new PL.Frm_Supplier();
+        //SalesManagmentSystem2.FrmUser frmUser=new FrmUser();
+        //SalesManagmentSystem2.PL.Frm_Supplier frm_Supplier = new PL.Frm_Supplier();
+        SalesManagmentSystem2.PL.Frm_Supplier Frm_Supplier=new PL.Frm_Supplier();
+
         SalesManagmentSystem2.PL.MessageDialog messageDialog = new PL.MessageDialog();
 
 
@@ -65,6 +67,7 @@ namespace SalesManagmentSystem2
             if (WindowState == FormWindowState.Normal)
             {
                 WindowState = FormWindowState.Maximized;
+              
 
             }
             else
@@ -80,10 +83,7 @@ namespace SalesManagmentSystem2
             WindowState = FormWindowState.Minimized;
         }
 
-        private void pnlTop_Paint(object sender, PaintEventArgs e)
-        {
 
-        }
 
 
         //btnHome
@@ -127,7 +127,12 @@ namespace SalesManagmentSystem2
         {
             pnlContent.Controls.Clear();
             var show = new FrmPurchase();
-            pnlContent.Controls.Add(show.pnlSalesDetails);
+            pnlContent.Controls.Add(show.Purchases_Panel);
+            if (WindowState == FormWindowState.Maximized)
+            {
+                show.Purchases_Panel.Location = new Point(200, 200);
+            }
+
         }
 
         //btnPurchaseDetails
@@ -139,22 +144,24 @@ namespace SalesManagmentSystem2
         //btnSupplier
         private void simpleButton8_Click(object sender, EventArgs e)
         {
-            this.pnlContent.Controls.Clear();
-            this.pnlContent.Controls.Add(frm_Supplier.Page_supplier);
+            pnlContent.Controls.Clear();
+            pnlContent.Controls.Add(Frm_Supplier.Page_supplier);
+            //this.pnlContent.Controls.Clear();
+            //this.pnlContent.Controls.Add(frm_Supplier.Page_supplier);
         }
 
         //btnUsers
         private void btnUsers_Click(object sender, EventArgs e)
         {
             this.pnlContent.Controls.Clear();
-            this.pnlContent.Controls.Add(frmUser.pnlUser);
+           // this.pnlContent.Controls.Add(frmUser.pnlUser);
         }
 
         //btnCustomers
         private void btnCustomers_Click(object sender, EventArgs e)
         {
             pnlContent.Controls.Clear();
-            pnlContent.Controls.Add(frmCategories.pnlCat);
+            pnlContent.Controls.Add(frmCustomer.pnlCustomer);
 
         }
     }

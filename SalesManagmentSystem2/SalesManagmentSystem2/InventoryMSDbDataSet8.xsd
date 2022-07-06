@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="InventoryMSDbDataSet8" targetNamespace="http://tempuri.org/InventoryMSDbDataSet8.xsd" xmlns:mstns="http://tempuri.org/InventoryMSDbDataSet8.xsd" xmlns="http://tempuri.org/InventoryMSDbDataSet8.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="InventoryMSDbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="InventoryMSDbConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SalesManagmentSystem2.Properties.Settings.GlobalReference.Default.InventoryMSDbConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Purchasing_invoiceTableAdapter" GeneratorDataComponentClassName="Purchasing_invoiceTableAdapter" Name="Purchasing_invoice" UserDataComponentName="Purchasing_invoiceTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="InventoryMSDbConnectionString (Settings)" DbObjectName="InventoryMSDb.dbo.Purchasing_invoice" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ProductName, FullName, ExpireDate, ProductDate, DataProcess, TotalPrice, Total_quantity, total FROM dbo.Purchasing_invoice</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ProductName" DataSetColumn="ProductName" />
+              <Mapping SourceColumn="FullName" DataSetColumn="FullName" />
+              <Mapping SourceColumn="ExpireDate" DataSetColumn="ExpireDate" />
+              <Mapping SourceColumn="ProductDate" DataSetColumn="ProductDate" />
+              <Mapping SourceColumn="DataProcess" DataSetColumn="DataProcess" />
+              <Mapping SourceColumn="TotalPrice" DataSetColumn="TotalPrice" />
+              <Mapping SourceColumn="Total_quantity" DataSetColumn="Total_quantity" />
+              <Mapping SourceColumn="total" DataSetColumn="total" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="InventoryMSDbDataSet8" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="InventoryMSDbDataSet8" msprop:Generator_DataSetName="InventoryMSDbDataSet8">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Purchasing_invoice" msprop:Generator_RowEvHandlerName="Purchasing_invoiceRowChangeEventHandler" msprop:Generator_RowDeletedName="Purchasing_invoiceRowDeleted" msprop:Generator_RowDeletingName="Purchasing_invoiceRowDeleting" msprop:Generator_RowEvArgName="Purchasing_invoiceRowChangeEvent" msprop:Generator_TablePropName="Purchasing_invoice" msprop:Generator_RowChangedName="Purchasing_invoiceRowChanged" msprop:Generator_RowChangingName="Purchasing_invoiceRowChanging" msprop:Generator_TableClassName="Purchasing_invoiceDataTable" msprop:Generator_RowClassName="Purchasing_invoiceRow" msprop:Generator_TableVarName="tablePurchasing_invoice" msprop:Generator_UserTableName="Purchasing_invoice">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_UserColumnName="ProductName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_UserColumnName="FullName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ExpireDate" msprop:Generator_ColumnPropNameInRow="ExpireDate" msprop:Generator_ColumnPropNameInTable="ExpireDateColumn" msprop:Generator_ColumnVarNameInTable="columnExpireDate" msprop:Generator_UserColumnName="ExpireDate" type="xs:dateTime" />
+              <xs:element name="ProductDate" msprop:Generator_ColumnPropNameInRow="ProductDate" msprop:Generator_ColumnPropNameInTable="ProductDateColumn" msprop:Generator_ColumnVarNameInTable="columnProductDate" msprop:Generator_UserColumnName="ProductDate" type="xs:dateTime" />
+              <xs:element name="DataProcess" msprop:Generator_ColumnPropNameInRow="DataProcess" msprop:Generator_ColumnPropNameInTable="DataProcessColumn" msprop:Generator_ColumnVarNameInTable="columnDataProcess" msprop:Generator_UserColumnName="DataProcess" type="xs:dateTime" />
+              <xs:element name="TotalPrice" msprop:Generator_ColumnPropNameInRow="TotalPrice" msprop:Generator_ColumnPropNameInTable="TotalPriceColumn" msprop:Generator_ColumnVarNameInTable="columnTotalPrice" msprop:Generator_UserColumnName="TotalPrice" type="xs:decimal" />
+              <xs:element name="Total_quantity" msprop:Generator_ColumnPropNameInRow="Total_quantity" msprop:Generator_ColumnPropNameInTable="Total_quantityColumn" msprop:Generator_ColumnVarNameInTable="columnTotal_quantity" msprop:Generator_UserColumnName="Total_quantity" type="xs:int" />
+              <xs:element name="total" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_UserColumnName="total" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -70,8 +70,9 @@
             this.Page_supplier.Controls.Add(this.panel2);
             this.Page_supplier.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Page_supplier.Location = new System.Drawing.Point(0, 0);
+            this.Page_supplier.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Page_supplier.Name = "Page_supplier";
-            this.Page_supplier.Size = new System.Drawing.Size(957, 660);
+            this.Page_supplier.Size = new System.Drawing.Size(1276, 812);
             this.Page_supplier.TabIndex = 0;
             // 
             // panel5
@@ -79,18 +80,21 @@
             this.panel5.Controls.Add(this.gridControl1);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(643, 660);
+            this.panel5.Size = new System.Drawing.Size(857, 812);
             this.panel5.TabIndex = 2;
             // 
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.gridControl1.Size = new System.Drawing.Size(643, 660);
+            this.gridControl1.Size = new System.Drawing.Size(857, 812);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -103,6 +107,7 @@
             this.colAddress,
             this.colPhone,
             this.colMail});
+            this.gridView1.DetailHeight = 431;
             this.gridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
@@ -115,47 +120,48 @@
             // colName
             // 
             this.colName.FieldName = "Name";
-            this.colName.MinWidth = 22;
+            this.colName.MinWidth = 29;
             this.colName.Name = "colName";
             this.colName.Visible = true;
             this.colName.VisibleIndex = 0;
-            this.colName.Width = 83;
+            this.colName.Width = 111;
             // 
             // colAddress
             // 
             this.colAddress.FieldName = "Address";
-            this.colAddress.MinWidth = 22;
+            this.colAddress.MinWidth = 29;
             this.colAddress.Name = "colAddress";
             this.colAddress.Visible = true;
             this.colAddress.VisibleIndex = 1;
-            this.colAddress.Width = 83;
+            this.colAddress.Width = 111;
             // 
             // colPhone
             // 
             this.colPhone.FieldName = "Phone";
-            this.colPhone.MinWidth = 22;
+            this.colPhone.MinWidth = 29;
             this.colPhone.Name = "colPhone";
             this.colPhone.Visible = true;
             this.colPhone.VisibleIndex = 2;
-            this.colPhone.Width = 83;
+            this.colPhone.Width = 111;
             // 
             // colMail
             // 
             this.colMail.FieldName = "Mail";
-            this.colMail.MinWidth = 22;
+            this.colMail.MinWidth = 29;
             this.colMail.Name = "colMail";
             this.colMail.Visible = true;
             this.colMail.VisibleIndex = 3;
-            this.colMail.Width = 83;
+            this.colMail.Width = 111;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(643, 0);
+            this.panel1.Location = new System.Drawing.Point(857, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(314, 660);
+            this.panel1.Size = new System.Drawing.Size(419, 812);
             this.panel1.TabIndex = 1;
             // 
             // panel4
@@ -165,9 +171,10 @@
             this.panel4.Controls.Add(this.btn_delete_supp);
             this.panel4.Controls.Add(this.btn_edit_supp);
             this.panel4.Controls.Add(this.btn_add_supp);
-            this.panel4.Location = new System.Drawing.Point(-7, 395);
+            this.panel4.Location = new System.Drawing.Point(-9, 486);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(321, 265);
+            this.panel4.Size = new System.Drawing.Size(428, 326);
             this.panel4.TabIndex = 5;
             // 
             // refresh_supp
@@ -175,9 +182,10 @@
             this.refresh_supp.Appearance.Font = new System.Drawing.Font("Tahoma", 10.86792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.refresh_supp.Appearance.Options.UseFont = true;
             this.refresh_supp.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("refresh_supp.ImageOptions.Image")));
-            this.refresh_supp.Location = new System.Drawing.Point(179, 117);
+            this.refresh_supp.Location = new System.Drawing.Point(239, 144);
+            this.refresh_supp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.refresh_supp.Name = "refresh_supp";
-            this.refresh_supp.Size = new System.Drawing.Size(136, 71);
+            this.refresh_supp.Size = new System.Drawing.Size(181, 87);
             this.refresh_supp.TabIndex = 7;
             this.refresh_supp.Text = "تحديث";
             this.refresh_supp.Click += new System.EventHandler(this.refresh_supp_Click);
@@ -187,9 +195,10 @@
             this.btn_delete_supp.Appearance.Font = new System.Drawing.Font("Tahoma", 10.86792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_delete_supp.Appearance.Options.UseFont = true;
             this.btn_delete_supp.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_delete_supp.ImageOptions.Image")));
-            this.btn_delete_supp.Location = new System.Drawing.Point(179, 24);
+            this.btn_delete_supp.Location = new System.Drawing.Point(239, 30);
+            this.btn_delete_supp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_delete_supp.Name = "btn_delete_supp";
-            this.btn_delete_supp.Size = new System.Drawing.Size(135, 71);
+            this.btn_delete_supp.Size = new System.Drawing.Size(180, 87);
             this.btn_delete_supp.TabIndex = 6;
             this.btn_delete_supp.Text = "حذف";
             this.btn_delete_supp.Click += new System.EventHandler(this.btn_delete_supp_Click);
@@ -199,9 +208,10 @@
             this.btn_edit_supp.Appearance.Font = new System.Drawing.Font("Tahoma", 10.86792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_edit_supp.Appearance.Options.UseFont = true;
             this.btn_edit_supp.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_edit_supp.ImageOptions.Image")));
-            this.btn_edit_supp.Location = new System.Drawing.Point(10, 117);
+            this.btn_edit_supp.Location = new System.Drawing.Point(13, 144);
+            this.btn_edit_supp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_edit_supp.Name = "btn_edit_supp";
-            this.btn_edit_supp.Size = new System.Drawing.Size(163, 71);
+            this.btn_edit_supp.Size = new System.Drawing.Size(217, 87);
             this.btn_edit_supp.TabIndex = 5;
             this.btn_edit_supp.Text = "تعديل";
             this.btn_edit_supp.Click += new System.EventHandler(this.btn_edit_supp_Click);
@@ -211,9 +221,10 @@
             this.btn_add_supp.Appearance.Font = new System.Drawing.Font("Tahoma", 10.86792F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_add_supp.Appearance.Options.UseFont = true;
             this.btn_add_supp.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btn_add_supp.ImageOptions.Image")));
-            this.btn_add_supp.Location = new System.Drawing.Point(10, 24);
+            this.btn_add_supp.Location = new System.Drawing.Point(13, 30);
+            this.btn_add_supp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_add_supp.Name = "btn_add_supp";
-            this.btn_add_supp.Size = new System.Drawing.Size(163, 71);
+            this.btn_add_supp.Size = new System.Drawing.Size(217, 87);
             this.btn_add_supp.TabIndex = 4;
             this.btn_add_supp.Text = "اضافة";
             this.btn_add_supp.Click += new System.EventHandler(this.btn_add_supp_Click);
@@ -229,28 +240,32 @@
             this.panel3.Controls.Add(this.email_client);
             this.panel3.Controls.Add(this.phone_client);
             this.panel3.Controls.Add(this.name_client);
-            this.panel3.Location = new System.Drawing.Point(-7, 0);
+            this.panel3.Location = new System.Drawing.Point(-9, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(321, 389);
+            this.panel3.Size = new System.Drawing.Size(428, 479);
             this.panel3.TabIndex = 4;
+            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // address_client
             // 
             this.address_client.Font = new System.Drawing.Font("Tahoma", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.address_client.Location = new System.Drawing.Point(19, 280);
+            this.address_client.Location = new System.Drawing.Point(25, 345);
+            this.address_client.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.address_client.Multiline = true;
             this.address_client.Name = "address_client";
             this.address_client.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.address_client.Size = new System.Drawing.Size(288, 90);
+            this.address_client.Size = new System.Drawing.Size(383, 110);
             this.address_client.TabIndex = 8;
             // 
             // labelControl4
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(241, 251);
+            this.labelControl4.Location = new System.Drawing.Point(321, 309);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(62, 23);
+            this.labelControl4.Size = new System.Drawing.Size(67, 25);
             this.labelControl4.TabIndex = 7;
             this.labelControl4.Text = "العنوان";
             // 
@@ -258,9 +273,10 @@
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(165, 172);
+            this.labelControl3.Location = new System.Drawing.Point(220, 212);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(142, 23);
+            this.labelControl3.Size = new System.Drawing.Size(157, 25);
             this.labelControl3.TabIndex = 6;
             this.labelControl3.Text = "البريد الالكترونى";
             // 
@@ -268,9 +284,10 @@
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(198, 93);
+            this.labelControl2.Location = new System.Drawing.Point(264, 114);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(109, 23);
+            this.labelControl2.Size = new System.Drawing.Size(120, 25);
             this.labelControl2.TabIndex = 5;
             this.labelControl2.Text = "رقم التليفون";
             // 
@@ -278,37 +295,41 @@
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(200, 25);
+            this.labelControl1.Location = new System.Drawing.Point(267, 31);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(106, 23);
+            this.labelControl1.Size = new System.Drawing.Size(115, 25);
             this.labelControl1.TabIndex = 4;
             this.labelControl1.Text = "اسم العميل";
             // 
             // email_client
             // 
             this.email_client.Font = new System.Drawing.Font("Tahoma", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email_client.Location = new System.Drawing.Point(19, 203);
+            this.email_client.Location = new System.Drawing.Point(25, 250);
+            this.email_client.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.email_client.Name = "email_client";
             this.email_client.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.email_client.Size = new System.Drawing.Size(288, 29);
+            this.email_client.Size = new System.Drawing.Size(383, 32);
             this.email_client.TabIndex = 3;
             // 
             // phone_client
             // 
             this.phone_client.Font = new System.Drawing.Font("Tahoma", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phone_client.Location = new System.Drawing.Point(19, 124);
+            this.phone_client.Location = new System.Drawing.Point(25, 153);
+            this.phone_client.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.phone_client.Name = "phone_client";
             this.phone_client.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.phone_client.Size = new System.Drawing.Size(288, 29);
+            this.phone_client.Size = new System.Drawing.Size(383, 32);
             this.phone_client.TabIndex = 1;
             // 
             // name_client
             // 
             this.name_client.Font = new System.Drawing.Font("Tahoma", 12.22642F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.name_client.Location = new System.Drawing.Point(19, 56);
+            this.name_client.Location = new System.Drawing.Point(25, 69);
+            this.name_client.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.name_client.Name = "name_client";
             this.name_client.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.name_client.Size = new System.Drawing.Size(288, 29);
+            this.name_client.Size = new System.Drawing.Size(383, 32);
             this.name_client.TabIndex = 0;
             // 
             // panel2
@@ -316,6 +337,7 @@
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(0, 0);
             this.panel2.TabIndex = 0;
@@ -326,11 +348,12 @@
             // 
             // Frm_Supplier
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(957, 660);
+            this.ClientSize = new System.Drawing.Size(1276, 812);
             this.Controls.Add(this.Page_supplier);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Frm_Supplier";
             this.Text = "Frm_Supplier";
             this.TopMost = true;

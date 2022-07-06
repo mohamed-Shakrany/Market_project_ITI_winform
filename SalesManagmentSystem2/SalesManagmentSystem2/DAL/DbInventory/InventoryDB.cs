@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using SalesManagmentSystem2.DAL.Models;
+using System.Data.Entity.Core.Objects;
+
 namespace SalesManagmentSystem2.DAL.DbInventory
 {
     public  class InventoryDB:DbContext
@@ -102,5 +104,14 @@ namespace SalesManagmentSystem2.DAL.DbInventory
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Category> Categories { get; set; }
 
+        internal void Refresh(RefreshMode clientWins, BuyProcess buyprocess_)
+        {
+            throw new NotImplementedException();
+        }
+
+        internal void Refresh(RefreshMode clientWins, BuyProcessProduct bpp)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
